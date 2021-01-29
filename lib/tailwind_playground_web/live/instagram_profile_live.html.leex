@@ -1,17 +1,35 @@
-<header class="md:hidden flex px-4">
+<header class="grid grid-cols-4 px-4 md:grid md:grid-cols-4 md:items-center md:px-8">
   <!-- Profile Pic -->
-  <div clas="w-2/12">
-    <div class="w-16 h16 shadow-2xl rounded-full overflow-hidden">
+  <div class="col-span-1">
+    <div class="w-16 h16 md:w-40 md:h-40 shadow-2xl rounded-full overflow-hidden">
         <a href=""><img class="w-full h-full object-cover object-center" src="https://picsum.photos/id/237/600/600"></a>
     </div>
   </div>
-  <!-- Username and follow btn section -->
-  <div class="w-10/12 px-4 md:hidden">
-    <h1 class="truncate text-xl mr-5 text-gray-500">some.long.usernamefddamoremore</h1>
-    <div class="mt-2 max-w-full">
+  <!-- Details section -->
+  <div class="md:col-span-3 col-span-3 md:pl-16">
+    <div class="flex md:p-3">
+      <h1 class="truncate text-xl md:text-2xl md:mr-5 text-gray-500">some.long.username</h1>
+      <span class="hidden md:inline-block md:ml-16"><button class="py-1 px-6 border-none shadow rounded text-gray-50 hover:bg-blue-600 bg-blue-500">Follow</button></span>
+    </div>
+    <div class="mt-2 max-w-full md:hidden">
         <button class="w-11/12 block py-1 px-6 border-none shadow rounded text-gray-50 hover:bg-blue-600 bg-blue-500">Follow</button>
     </div>
+    <!-- Count section -->
+    <div class="p-3 hidden md:block">
+      <ul class="flex">
+        <li><b>3</b> Posts</li>
+        <li class="ml-11"><b>6</b> Followers</li>
+        <li class="ml-11"><b>20</b> Following</li>
+      </ul>
+    </div>
+    <!-- Details section not visitble on small screens -->
+    <div class="hidden md:block">
+        <h2 class="pl-3 text-lg text-gray-800 font-bold">Full Name</h2>
+        <p class="pl-3 w-1/2 break-words">Some long description bio for something  </p>
+        <a href="" class="pl-3 text-blue-600">something.com</a>
+    </div>
   </div>
+
 </header>
 <!-- Details section -->
 <div class="my-3 md:hidden">
@@ -20,7 +38,7 @@
     <a href="" class="text-sm pl-3 text-blue-600">something.com</a>
 </div>
 <!-- Count section -->
-<section class="md:hidden border-t-2 border-b-2 border-gray-200 px-2 py-2 max-w-full">
+<section class="md:hidden mt-5 border-t-2 border-b-2 border-gray-200 px-2 py-2 max-w-full">
  <ul class="flex" >
     <li class="flex-auto" >
         <div class="flex flex-col text-center">
@@ -43,31 +61,6 @@
  </ul>
 </section>
 
-<header class="hidden md:grid md:grid-cols-4 md:items-center md:px-8">
-  <!-- Profile Pic -->
-  <div class="w-16 h16 md:w-40 md:h-40 shadow-2xl rounded-full overflow-hidden">
-    <a href=""><img class="w-full h-full object-cover object-center" src="https://picsum.photos/id/237/600/600"></a>
-  </div>
-  <!-- Details section -->
-  <div class="md:col-span-3 md:pl-16">
-    <div class="flex p-3">
-      <h1 class="text-2xl mr-5 text-gray-600">some.long.username</h1>
-      <span class="md:ml-16"><button class="py-1 px-6 border-none shadow rounded text-gray-50 hover:bg-blue-600 bg-blue-500">Follow</button></span>
-    </div>
-    <!-- Count section -->
-    <div class="p-3">
-      <ul class="flex">
-        <li><b>3</b> Posts</li>
-        <li class="ml-11"><b>6</b> Followers</li>
-        <li class="ml-11"><b>20</b> Following</li>
-      </ul>
-    </div>
-    <h2 class="pl-3 text-lg text-gray-800 font-bold">Full Name</h2>
-    <p class="pl-3 w-1/2 break-words">Some long description bio for something  </p>
-    <a href="" class="pl-3 text-blue-600">something.com</a>
-  </div>
-
-</header>
 <!-- Gallery Grid -->
 <div class="mt-16 grid gap-1 sm:gap-1 md:gap-8 grid-cols-3">
   <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/237/600/600">
