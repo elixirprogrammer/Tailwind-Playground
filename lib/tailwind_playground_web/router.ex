@@ -18,7 +18,8 @@ defmodule TailwindPlaygroundWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
-    live "/instaprofile", InstagramProfileLive, :index
+    live "/instaprofile", InstagramProfileLive
+    live "/instapost", InstagramPostLive
   end
 
   # Other scopes may use custom stacks.
