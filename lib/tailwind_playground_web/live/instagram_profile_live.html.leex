@@ -121,10 +121,7 @@
 
 <!-- Gallery Grid -->
 <div class="mt-9 grid gap-1 sm:gap-1 md:gap-8 grid-cols-3">
-  <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/237/600/600">
-  <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/238/600/600">
-  <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/239/600/600">
-  <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/234/600/600">
-  <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/235/600/600">
-  <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/231/600/600">
+  <%= for i <- 1..6 do %>
+    <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/23<%= i %>/600/600">
+  <% end %>
 </div>
