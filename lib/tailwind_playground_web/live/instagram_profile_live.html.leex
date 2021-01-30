@@ -1,3 +1,14 @@
+<div x-data="{ open: false }">
+    <button @click="open = true">Open Dropdown</button>
+
+    <ul
+        x-show="open"
+        @click.away="open = false"
+    >
+        Dropdown Body
+    </ul>
+</div>
+
 <header class="md:flex md:justify-center">
   <div class="flex p-4">
     <div class="w-1/5">
