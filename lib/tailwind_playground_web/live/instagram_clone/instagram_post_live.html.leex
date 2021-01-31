@@ -1,3 +1,4 @@
+<!-- Post header section -->
 <div class="flex p-4 items-center">
     <div class="">
       <div class="w-8 h-8 md:w-40 md:h-40 shadow-2xl rounded-full overflow-hidden">
@@ -5,13 +6,19 @@
       </div>
     </div>
     <div class="ml-4 md:pl-24 md:ml-12">
-      <h1 class="truncate font-bold md:overflow-clip text-xs md:text-2xl text-gray-500">some.long.username</h1>
+      <a href="" class="truncate font-bold md:overflow-clip text-xs md:text-2xl text-gray-500">some.long.username</a>
     </div>
 
 </div>
+<!-- End post header section -->
+
+<!-- Post Image section -->
 <div class="">
   <img class="w-full h-4/6 object-cover shadow-xl" src="https://picsum.photos/id/237/600/600">
 <div>
+<!-- End Post Image section -->
+
+<!-- Action icons section -->
 <div class="flex p-3 mt-4">
   <div class="w-8 h-8 cursor-pointer">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,9 +44,20 @@
     </svg>
   </div>
 </div>
-<h5 class="py-3 px-4 text-sm text-gray-600">Liked by <b>10</b></h5>
-<h6 class="px-4 text-xs text-gray-400">March 7, 2020</h6>
+<!-- End Action icons section -->
 
+<!-- Description section -->
+<button class="px-4 text-xs text-gray-500 font-bold focus:outline-none">10 likes</button>
+<div class="px-4">
+  <a href="" class="font-bold md:overflow-clip text-xs md:text-2xl text-gray-500">some.long.username</a>
+  <span class="text-sm text-gray-700">
+    <p class="inline">smething follow me to some long description here and more and more</p></span>
+  </span>
+</div>
+<h6 class="pt-4 px-4 text-xs text-gray-400">March 7, 2020</h6>
+<!-- End Description Section -->
+
+<!-- Comment input section -->
 <div class="p-4 flex items-center mt-3 border-2 border-gray-100">
   <textarea
     x-data="{ resize: () => { $el.style.height = '5px'; $el.style.height = $el.scrollHeight + 'px' } }"
@@ -52,3 +70,4 @@
     autocorrect="off"></textarea>
   <button class="mr-2 text-blue-500 font-bold pb-2">Post</button>
 </div>
+<!-- End Comment input section -->
