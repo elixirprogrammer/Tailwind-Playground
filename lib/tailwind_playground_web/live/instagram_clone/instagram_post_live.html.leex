@@ -44,14 +44,14 @@
 <!-- End Action icons section -->
 
 <!-- Description section -->
-<button class="px-4 text-xs text-gray-500 font-bold focus:outline-none">10 likes</button>
+<button class="px-4 text-xs text-gray-500 font-bold focus:outline-none"><%= Enum.random(1..100) %> likes</button>
 <div class="px-4">
   <a href="" class="font-bold md:overflow-clip text-xs md:text-2xl text-gray-500"><%= @username.name %></a>
   <span class="text-sm text-gray-700">
     <p class="inline"><%= Faker.Lorem.paragraph %></p></span>
   </span>
 </div>
-<h6 class="pt-4 px-4 text-xs text-gray-400">March 7, 2020</h6>
+<h6 class="pt-4 px-4 text-xs text-gray-400"><%= Timex.format!(Faker.Date.backward(120), "{Mfull} {D}, {YYYY}") %></h6>
 <!-- End Description Section -->
 
 <!-- Comments section -->
