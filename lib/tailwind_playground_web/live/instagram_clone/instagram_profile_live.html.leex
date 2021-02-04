@@ -128,6 +128,6 @@
 <!-- Gallery Grid -->
 <div class="mt-9 grid gap-1 sm:gap-1 md:gap-8 grid-cols-3">
   <%= for i <- 1..6 do %>
-    <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/23<%= i %>/600/600">
+    <img class="md:h-66 lg:h-80 w-full object-cover shadow-xl" src="https://picsum.photos/id/<%= Enum.random(1..1060) %>/600">
   <% end %>
 </div>

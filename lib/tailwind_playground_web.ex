@@ -90,6 +90,11 @@ defmodule TailwindPlaygroundWeb do
       import TailwindPlaygroundWeb.ErrorHelpers
       import TailwindPlaygroundWeb.Gettext
       alias TailwindPlaygroundWeb.Router.Helpers, as: Routes
+
+      def format_username(name) do
+        name |> String.downcase |> String.split |> Enum.join
+      end
+
     end
   end
 

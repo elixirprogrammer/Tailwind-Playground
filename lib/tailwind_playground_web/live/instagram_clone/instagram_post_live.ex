@@ -2,6 +2,8 @@ defmodule TailwindPlaygroundWeb.InstagramPostLive do
   use TailwindPlaygroundWeb, :live_view
 
   def mount(_params, _session, socket) do
-    {:ok, socket}
+    username = %{:name => format_username(Faker.Person.name())}
+    {:ok, assign(socket, username: username)}
   end
+
 end
