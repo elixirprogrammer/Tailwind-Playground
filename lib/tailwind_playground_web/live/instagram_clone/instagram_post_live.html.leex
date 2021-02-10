@@ -45,7 +45,7 @@
     <!-- End Description Section -->
   </div>
 
-  <div class="w-full md:w-2/5 md:h-auto md:border-2 md:relative">
+  <div class="w-full md:w-2/5 md:h-auto md:border-2">
     <div class="flex absolute top-0 md:static p-4 items-center md:border-b-2">
       <!-- Post header section -->
       <a href=""><img class="w-8 h-8 rounded-full object-cover object-center" src="<%=Faker.Avatar.image_url(300, 300) %>"></a>
@@ -54,7 +54,7 @@
       </div>
       <!-- End post header section -->
     </div>
-    <div class="md:h-52 lg:h-80 2xl:h-96 no-scrollbar overflow-y-scroll p-4 flex-col">
+    <div class="md:h-52 lg:h-96 no-scrollbar overflow-y-scroll p-4 flex-col">
       <!-- Description section -->
       <section class="hidden md:block">
         <div class="flex mt-2">
@@ -137,7 +137,7 @@
       <% end %>
       <!-- End Comments section -->
     </div>
-    <div class="hidden md:block border-t-2 2xl:mb-20">
+    <div class="hidden md:block border-t-2">
       <!-- Action icons section -->
       <div class="flex pl-4 pr-2 pt-2">
         <div class="w-8 h-8 cursor-pointer">
@@ -170,7 +170,7 @@
       <h6 class="px-5 text-xs text-gray-400"><%= Timex.format!(Faker.Date.backward(120), "{Mfull} {D}, {YYYY}") %></h6>
       <!-- End Description Section -->
     </div>
-    <div class="md:absolute md:bottom-0 w-full md:mt-8">
+    <div class="md:bottom-0 w-full md:mt-8">
       <!-- Comment input section -->
       <div class="p-3 flex items-center mt-3 border-t-2 border-gray-100">
         <textarea
