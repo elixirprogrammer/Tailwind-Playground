@@ -31,6 +31,10 @@ module.exports = {
       },
     }),
   },
-  variants: {},
+  variants: {
+    extend: {
+      borderWidth: ['hover'],
+    }
+  },
   plugins: [require('@tailwindcss/custom-forms')],
 }
