@@ -20,8 +20,9 @@ defmodule TailwindPlaygroundWeb.Router do
     live "/", PageLive, :index
     live "/instaprofile", InstagramProfileLive
     live "/instapost", InstagramPostLive
-    live "/45sdone", CheckBoxesLive
     live "/instaeditprofile", InstagramProfileEditLive
+    live "/instaeditprofilepass", InstagramProfileEditPassLive
+    live "/45sdone", CheckBoxesLive
   end
 
   # Other scopes may use custom stacks.
